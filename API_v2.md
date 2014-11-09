@@ -490,8 +490,9 @@ db.addNodeToLegacyIndex({name, key, value, _id, unique: true}, cb);
 db.addRelationshipToLegacyIndex({name, key, value, _id, unique: true}, cb);
 ```
 
-(This defaults to the "create or fail" mode, as it's hard to imagine a
-real-world use case for "get or create" when adding existing nodes.)
+This uses the "create or fail" mode.
+It's hard to imagine a real-world use case for "get or create" when adding
+existing nodes, but please offer feedback if you have one.
 
 For creating new nodes or relationships, the `create` method below corresponds
 with "create or fail", while `getOrCreate` corresponds with "get or create":
